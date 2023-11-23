@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    background: linear-gradient(to bottom, #444, #fff);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Add more styles as needed */
