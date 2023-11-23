@@ -1,5 +1,4 @@
-// This is where your JavaScript code will go
-// Fetch your AI-generated image URLs here and replace the placeholders
+// Replace placeholder URLs with your AI-generated image URLs
 const imageUrls = [
     "https://via.placeholder.com/300",
     "https://via.placeholder.com/300",
@@ -8,7 +7,7 @@ const imageUrls = [
 
 // Function to dynamically create image elements
 function createImageElements() {
-    const imageContainer = document.querySelector('.image-container');
+    const imageContainer = document.getElementById('imageContainer');
 
     imageUrls.forEach(url => {
         const img = document.createElement('img');
@@ -18,5 +17,12 @@ function createImageElements() {
     });
 }
 
-// Call the function to create image elements
+// Function to update site name
+function updateSiteName(newName) {
+    const siteName = document.getElementById('siteName');
+    siteName.textContent = newName;
+}
+
+// Call functions
 createImageElements();
+updateSiteName("Your Daily AI Images");
